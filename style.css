@@ -223,6 +223,26 @@ text-align: center;
   border: solid 4px rgb(255, 255, 255); 
 }
 
+/*Quienes Somos*/
+.quienes
+{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.titlequien
+{
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    height: 70%;
+    width: 60%;
+}
+
 /*Media Queries*/
 
 @media screen and (max-width: 992px) {
@@ -269,7 +289,14 @@ text-align: center;
       color: white;
       font-size: 25px;}
       .titlelibros{display: none;}
-  
+      .titlequien
+      {
+          color: white;
+          font-size: 20px;
+          height: 100%;
+          width: 80%;
+          text-align: center;
+      }
   .nav {
       height: 200px;
       justify-content: center;
