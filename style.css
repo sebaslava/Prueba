@@ -30,7 +30,7 @@ body{ display: flex;
     background-color: rgb(230, 131, 19);
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
   }
 .nav__links{
   list-style: none;
@@ -173,13 +173,16 @@ font-size: 30px;}
       grid-template-columns: 2fr 2fr 2fr;
       grid-auto-rows: 2fr 2fr 2fr;
   }
-  .imagen__nav{
-    margin-left: 10px;
-   }
-  .nav__link{margin-left: 15px;}
+  .nav__links{
+    font-size: 28px;
+  }
+  .nav__logo
+{
+  height: 45px;
+  margin-top: 5px;
 }
 
-@media screen  and (max-width: 768px){
+@media screen  and (max-width: 782px){
   .gridResponsive{ grid-template-areas: 
     "libro4 libro1 libro2"
     "libro4 libro5 libro3"
