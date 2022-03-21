@@ -173,6 +173,7 @@ font-size: 30px;}
       grid-template-columns: 2fr 2fr 2fr;
       grid-auto-rows: 2fr 2fr 2fr;
   }
+  .nav__link{margin: 0 auto;}
 }
 
 @media screen  and (max-width: 768px){
@@ -239,7 +240,8 @@ font-size: 30px;}
 .nav {
     height: 200px;
     display: flex;
-align-items: center;}
+align-items: center;
+}
 
 .nav__links {
     flex-direction: column;
