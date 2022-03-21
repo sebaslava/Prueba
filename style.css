@@ -237,7 +237,7 @@ font-size: 30px;}
     
 
 .nav {
-    height: 1rem;
+    height: 20vh;
     display: flex;
     justify-content: center;
 }
