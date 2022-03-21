@@ -237,10 +237,11 @@ text-align: center;
   .gridResponsiveProd{
     display: grid;
     grid-template-areas: 
-    "libros4 libros4 libros3 libros1"
-    "libros4 libros4 libros3 libros2";
+    "libros3 libros4 libros1" 
+    "libros3 libros4 libros1" 
+    "libros2 libros2";
     grid-template-columns: 200px 200px 200px 300px;
-    grid-template-rows:300px 300px 200px;
+    grid-template-rows:300px 300px;
   }
   .titlelibros{display: none;}
   .nav__links{
@@ -260,8 +261,7 @@ text-align: center;
       "libros2 libros3"
       "libros1 libros4";
     grid-template-columns: 300px 300px;
-    grid-template-rows:100px 300px;
-    margin: 10px 10px;
+    grid-template-rows:200px 300px;
     }
     .titlegrid{ display: flex;
       justify-content: center;
