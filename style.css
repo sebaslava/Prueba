@@ -166,12 +166,13 @@ font-size: 30px;}
   justify-content: center;
   margin: 10px auto;
   display: grid;
-  gap: 5px;
+  row-gap: 20px;
   grid-template-areas: 
-  "libros1 libros1 libros2 libros3"
-  "libros1 libros1 libros2 libros4";
+  "libros1 libros1 libros3 libros2"
+  "libros1 libros1 libros4 libros2";
   grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows:300px 300px;
+  grid-template-rows:300px 200px;
+  margin-bottom: 60px;
 }
 .libros1{
   grid-area: libros1;
@@ -184,9 +185,9 @@ text-align: center;
 }
 .imglibros1
 {
-  height: 97%;
+  height: 100%;
   width: 100%;
-  border: solid 1px red;
+  border: solid 4px white;
   
 }
 .libros2{
@@ -196,7 +197,7 @@ text-align: center;
 {
   height: 100%;
   width: 100%;
-  border: solid 1px red;
+  border: solid 4px rgb(255, 255, 255);
   
 }
 .libros3{
@@ -208,7 +209,7 @@ text-align: center;
 {
   height: 100%;
   width: 100%;
-  border: solid 1px red; 
+  border: solid 4px rgb(255, 255, 255); 
 }
 .libros4
 {
@@ -219,7 +220,7 @@ text-align: center;
 .imglibros4{
   height: 100%;
   width: 100%;
-  border: solid 1px red; 
+  border: solid 4px rgb(255, 255, 255); 
 }
 
 /*Media Queries*/
@@ -239,7 +240,7 @@ text-align: center;
     "libros4 libros4 libros3 libros1"
     "libros4 libros4 libros3 libros2";
     grid-template-columns: 200px 200px 200px 300px;
-    grid-template-rows:300px 300px;
+    grid-template-rows:300px 300px 200px;
   }
   .titlelibros{display: none;}
   .nav__links{
@@ -267,7 +268,7 @@ text-align: center;
       text-align: center;
       color: white;
       font-size: 25px;}
-      
+      .titlelibros{display: none;}
   
   .nav {
       height: 200px;
@@ -311,6 +312,12 @@ text-align: center;
     grid-template-columns: 70%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
   }
+  .titlegrid{ display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 25px;}
+    
   .gridResponsiveProd {
     display: grid;
     grid-template-areas: 
@@ -321,12 +328,7 @@ text-align: center;
   grid-template-columns: 70%;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-  .titlegrid{ display: flex;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    font-size: 25px;}
-    
+.titlelibros{display: none;}
 
 .nav {
     height: 200px;
