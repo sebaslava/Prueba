@@ -7,7 +7,7 @@
 body{ display: flex;
   flex-direction: column;
   font-family: 'comfortaa', sans-serif;
-  background-image: url(../img/cavern.jpg);
+  background-image: url(./img/cavern.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;}
@@ -189,7 +189,7 @@ font-size: 30px;}
     
 
 .nav {
-    height: 30vh;
+    height: 18vh;
     display: flex;
     justify-content: center;
 }
@@ -226,7 +226,8 @@ font-size: 30px;}
       "libro4"
       "libro5" 
       "libro6";
-    
+    grid-template-columns: 70%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
   }
   .titlegrid{ display: flex;
     justify-content: center;
@@ -236,7 +237,7 @@ font-size: 30px;}
     
 
 .nav {
-    height: 30vh;
+    height: 18vh;
     display: flex;
     justify-content: center;
 }
@@ -256,5 +257,12 @@ font-size: 30px;}
 
 .nav__items li {
     margin-top: 5px;
+}
+.titlefooter{
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  align-items: center;
 }
 }
