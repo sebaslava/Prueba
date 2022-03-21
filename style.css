@@ -189,7 +189,7 @@ font-size: 30px;}
     
 
 .nav {
-    height: 18vh;
+    height: 50px;
     display: flex;
     justify-content: center;
 }
@@ -237,7 +237,7 @@ font-size: 30px;}
     
 
 .nav {
-    height: 20vh;
+    height: 30px;
     display: flex;
     justify-content: center;
 }
