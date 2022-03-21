@@ -237,10 +237,9 @@ font-size: 30px;}
     
 
 .nav {
-    height: 30px;
+    height: 200px;
     display: flex;
-    justify-content: center;
-}
+align-items: center;}
 
 .nav__links {
     flex-direction: column;
