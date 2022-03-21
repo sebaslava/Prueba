@@ -115,12 +115,10 @@ font-size: 30px;}
   margin: 0 10px;
 
 }
-.imglibro4
-{
+.imglibro4{
   height: 100%;
   width: 100%;
-  border: solid 1px red;
-  
+  border: solid 1px red; 
 }
 .libro5
 {
@@ -161,6 +159,63 @@ font-size: 30px;}
   font-size: 25px;
   align-items: center;
 }
+/*Productos*/
+.gridResponsiveProd {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  margin: 10px auto;
+  display: grid;
+  gap: 5px;
+  grid-template-areas: 
+  "libros1 libros1 libros2 libros3"
+  "libros1 libros1 libros2 libros4";
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows:300px 300px;
+}
+.libros1{
+  grid-area: libros1;
+  margin: 0 10px;
+}
+.imglibros1
+{
+  height: 100%;
+  width: 100%;
+  border: solid 1px red;
+  
+}
+.libros2{
+  grid-area: libros2;
+}
+.imglibros2
+{
+  height: 100%;
+  width: 100%;
+  border: solid 1px red;
+  
+}
+.libros3{
+  grid-area: libros3;
+  margin: 0 10px;
+
+}
+.imglibros3
+{
+  height: 100%;
+  width: 100%;
+  border: solid 1px red; 
+}
+.libros4
+{
+  grid-area: libros4;
+  margin: 0 10px;
+
+}
+.imglibros4{
+  height: 100%;
+  width: 100%;
+  border: solid 1px red; 
+}
 
 /*Media Queries*/
 
@@ -173,16 +228,33 @@ font-size: 30px;}
       grid-template-columns: 2fr 2fr 2fr;
       grid-auto-rows: 2fr 2fr 2fr;
   }
+  .gridResponsiveProd{
+    display: grid;
+    grid-template-areas: 
+    "libros4 libros4 libros3 libros1"
+    "libros4 libros4 libros3 libros2";
+    grid-template-columns: 200px 200px 200px 300px;
+    grid-template-rows:300px 300px;
+  }
   .nav__links{
     font-size: 25px;
   }
 }
   
-  @media screen  and (max-width: 782px){
+  @media screen  and (max-width: 768px){
     .gridResponsive{ grid-template-areas: 
       "libro4 libro1 libro2"
       "libro4 libro5 libro3"
       "libro4 libro5 libro6"
+    }
+    .gridResponsiveProd{
+      grid-template-areas: 
+      "libros2 libros3" 
+      "libros2 libros3"
+      "libros1 libros4";
+    grid-template-columns: 300px 300px;
+    grid-template-rows:100px 300px;
+    margin: 10px 10px;
     }
     .titlegrid{ display: flex;
       justify-content: center;
@@ -193,7 +265,6 @@ font-size: 30px;}
   
   .nav {
       height: 200px;
-      display: flex;
       justify-content: center;
   }
   
@@ -234,6 +305,16 @@ font-size: 30px;}
     grid-template-columns: 70%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
   }
+  .gridResponsiveProd {
+    display: grid;
+    grid-template-areas: 
+    "libros1" 
+    "libros2"
+    "libros3"
+    "libros4";
+  grid-template-columns: 70%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
   .titlegrid{ display: flex;
     justify-content: center;
     text-align: center;
