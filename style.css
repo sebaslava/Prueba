@@ -243,6 +243,62 @@ text-align: center;
     width: 60%;
 }
 
+/*Contacto*/
+.reponsiveSocial{
+display: grid;
+grid-template-areas: "contactochat"
+                      "contactofacebook" 
+                      "contactoinsta" 
+                      "contactomail";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.contacto__chat{
+  display: grid;
+  justify-content: center;
+  grid-area: contactochat;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;}
+.contacto__facebook{
+  display: grid;
+  justify-content: center;
+  grid-area: contactofacebook;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;}
+.contacto__insta{
+  grid-area: contactoinsta;
+  display: grid;
+  justify-content: center;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;}
+.contacto__mail{
+  grid-area: contactomail;
+  display: grid;
+  justify-content: center;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+}
+.what{color: green;
+font-size: 50px;
+display: flex;
+justify-content: center;}
+.face{color: blue;
+font-size: 50px;
+display: flex;
+justify-content: center;}
+.instagram{color: red;
+font-size: 50px;
+display: flex;
+justify-content: center;}
+.mail{color: white;
+font-size: 50px;
+display: flex;
+justify-content: center;}
 /*Media Queries*/
 
 @media screen and (max-width: 992px) {
@@ -349,6 +405,8 @@ text-align: center;
 }
 .titlelibros{display: none;}
 
+.contacto__mail,.contacto__chat,.contacto__insta,.contacto__facebook{
+  font-size: 20px;}
 .nav {
     height: 200px;
     display: flex;
